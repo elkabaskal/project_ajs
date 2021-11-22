@@ -1,12 +1,19 @@
 Vue.component('cart', {
     data() {
         return {
-            imgCart: 'https://via.placeholder.com/50x100',
             cartItems: [],
             showCart: false,
+            show: true,
+            tab: "usersCart",
         }
     },
+
     methods: {
+        changePages() {
+            this.$emit('change', this.tab);
+            this.showCart = false;
+        },
+
         addProduct(product) {
             let find = this.cartItems.find(el => el.id_product === product.id_product);
             if (find) {
@@ -50,16 +57,19 @@ Vue.component('cart', {
     },
     template: `
         <div>
-            <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
+            <button class="menu__last icon" @click="showCart = !showCart"><img src="./media/cart.svg"></button>
             <div class="cart-block" v-show="showCart">
-                <p v-if="!cartItems.length">Корзина пуста</p>
+                <p class="card__les" v-if="!cartItems.length">Корзина пуста</p>
                 <cart-item class="cart-item" 
                 v-for="item of cartItems" 
                 :key="item.id_product"
                 :cart-item="item" 
-                :img="imgCart"
+                :img="item.url"
                 @remove="remove">
                 </cart-item>
+                <div v-if="cartItems.length">
+                    <button class="buy__button" v-show="show"  @click="changePages">Офорить заказ</button>
+                </div>
             </div>
         </div>`
 });
@@ -67,9 +77,9 @@ Vue.component('cart', {
 Vue.component('cart-item', {
     props: ['cartItem', 'img'],
     template: `
-                <div class="cart-item">
+            <div class="cart-item">
                 <div class="product-bio">
-                    <img :src="img" alt="Some image">
+                    <img :src="img" alt="Some image" width=50px>
                     <div class="product-desc">
                         <p class="product-title">{{cartItem.product_name}}</p>
                         <p class="product-quantity">Количество: {{cartItem.quantity}}</p>

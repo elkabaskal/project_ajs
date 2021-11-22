@@ -2,7 +2,17 @@ const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-a
 
 const app = new Vue({
     el: '#app',
+
+    data: {
+        title: 'Project internet shop AJS',
+        currentTab: 'products',
+    },
+
     methods: {
+        loadNewPage(tab) {
+            this.currentTab = tab;
+        },
+
         getJson(url) {
             return fetch(url)
                 .then(result => result.json())
@@ -46,4 +56,10 @@ const app = new Vue({
                 });
         },
     },
+    computed: {
+        currentComponent(tab) {
+            return this.tab = `${this.currentTab}`;
+        }
+    },
+
 });

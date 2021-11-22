@@ -1,5 +1,13 @@
 {
     "amount": 1600,
     "countGoods": 1,
-    "contents": []
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 678,
+            "product_name": "Куртка кожанная",
+            "price": 18700,
+            "url": "./media/id_678.png"
+        }
+    ]
 }

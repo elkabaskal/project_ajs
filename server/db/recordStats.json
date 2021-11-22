@@ -1,3 +1,252 @@
 [
-   
+    {
+        "time": "21 Nov 2021, 7:44:57 pm",
+        "prod_name": "Брюки мужские",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 7:54:03 pm",
+        "prod_name": "Брюки мужские",
+        "action": "add"
+    },
+    {
+        "time": "21 Nov 2021, 9:33:18 pm",
+        "prod_name": "Брюки мужские",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 9:33:20 pm",
+        "prod_name": "Пуловер",
+        "action": "add"
+    },
+    {
+        "time": "21 Nov 2021, 9:41:40 pm",
+        "prod_name": "Брюки мужские",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 9:41:40 pm",
+        "prod_name": "Брюки мужские",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 9:54:23 pm",
+        "prod_name": "Пуловер",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 9:54:26 pm",
+        "prod_name": "Куртка",
+        "action": "add"
+    },
+    {
+        "time": "21 Nov 2021, 10:02:36 pm",
+        "prod_name": "Брюки мужские",
+        "action": "add"
+    },
+    {
+        "time": "21 Nov 2021, 10:02:37 pm",
+        "prod_name": "Пуловер",
+        "action": "add"
+    },
+    {
+        "time": "21 Nov 2021, 10:04:29 pm",
+        "prod_name": "Куртка",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 10:04:30 pm",
+        "prod_name": "Брюки мужские",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 10:42:38 pm",
+        "prod_name": "Пуловер",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 10:42:47 pm",
+        "prod_name": "Брюки мужские",
+        "action": "add"
+    },
+    {
+        "time": "21 Nov 2021, 10:43:05 pm",
+        "prod_name": "Брюки мужские",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 10:43:13 pm",
+        "prod_name": "Куртка",
+        "action": "add"
+    },
+    {
+        "time": "21 Nov 2021, 10:43:24 pm",
+        "prod_name": "Куртка",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 10:43:24 pm",
+        "prod_name": "Куртка",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 10:43:25 pm",
+        "prod_name": "Куртка",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 10:44:06 pm",
+        "prod_name": "Куртка",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 10:44:07 pm",
+        "prod_name": "Куртка",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 10:44:07 pm",
+        "prod_name": "Куртка",
+        "action": "change"
+    },
+    {
+        "time": "21 Nov 2021, 10:44:08 pm",
+        "prod_name": "Куртка",
+        "action": "remove"
+    },
+    {
+        "time": "21 Nov 2021, 10:44:14 pm",
+        "prod_name": "Пуловер",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 10:47:52 am",
+        "prod_name": "Куртка",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 11:49:42 am",
+        "prod_name": "Куртка",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 11:49:48 am",
+        "prod_name": "Костюм женский",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:01:29 pm",
+        "prod_name": "Костюм женский",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:07:27 pm",
+        "prod_name": "Пуловер",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:07:33 pm",
+        "prod_name": "Брюки мужские",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:11:06 pm",
+        "prod_name": "Брюки мужские",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:12:07 pm",
+        "prod_name": "Брюки мужские",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:12:07 pm",
+        "prod_name": "Пуловер",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:12:29 pm",
+        "prod_name": "Пуловер",
+        "action": "change"
+    },
+    {
+        "time": "22 Nov 2021, 12:12:33 pm",
+        "prod_name": "Пуловер",
+        "action": "change"
+    },
+    {
+        "time": "22 Nov 2021, 12:14:13 pm",
+        "prod_name": "Пуловер",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:26:51 pm",
+        "prod_name": "Брюки мужские",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:26:55 pm",
+        "prod_name": "Костюм женский",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:26:55 pm",
+        "prod_name": "Куртка кожанная",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:26:56 pm",
+        "prod_name": "Рубашка мужская",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:26:59 pm",
+        "prod_name": "Пуловер",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:30:04 pm",
+        "prod_name": "Куртка кожанная",
+        "action": "change"
+    },
+    {
+        "time": "22 Nov 2021, 12:30:05 pm",
+        "prod_name": "Куртка",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:31:17 pm",
+        "prod_name": "Куртка кожанная",
+        "action": "change"
+    },
+    {
+        "time": "22 Nov 2021, 12:31:18 pm",
+        "prod_name": "Куртка кожанная",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:31:21 pm",
+        "prod_name": "Куртка кожанная",
+        "action": "add"
+    },
+    {
+        "time": "22 Nov 2021, 12:48:53 pm",
+        "prod_name": "Костюм женский",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:53:51 pm",
+        "prod_name": "Пуловер",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:53:52 pm",
+        "prod_name": "Рубашка мужская",
+        "action": "remove"
+    },
+    {
+        "time": "22 Nov 2021, 12:53:53 pm",
+        "prod_name": "Куртка",
+        "action": "remove"
+    }
 ]

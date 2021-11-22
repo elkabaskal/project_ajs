@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-<div id="app">
-    <header>
-        <div class="logo">Интернет-магазин</div>
-        <div class="cart">
-            <filter-el></filter-el>
-            <cart ref="cart"></cart>
-        </div>
-    </header>
-    <main>
-        <products ref="products"></products>
-        <error ref="error"></error>
-    </main>
-</div>
+    <div id="app">
+        <header>
+            <div class="container header__menu">
+                <div class="header__left">
+                    <a class="menu" href="index.html"><img src="./media/logo.png" alt="logo"></a>
+                    <p class="size__text">The BRAND of Luxerious Fashion</p>
+                </div>
+                <div class="haeder__right">
+                    <filter-el class="menu"></filter-el>
+                    <cart ref="cart" @change="loadNewPage"></cart>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- <products ref="products"></products> -->
+            <component :is="currentComponent" @change="loadNewPage"></component>
+            <error ref="error"></error>
+            <section>
+                <subscribe ref="subscribe"></subscribe>
+            </section>
+        </main>
+        <footer>
+            <social ref="social"></social>
+        </footer>
+    </div>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/SubscribeComp.js"></script>
+    <script src="js/FooterComp.js"></script>
     <script src="js/CartComp.js"></script>
     <script src="js/ProducComp.js"></script>
+    <script src="js/UsersCartComp.js"></script>
     <script src="js/FilterComp.js"></script>
     <script src="js/ErrorComp.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

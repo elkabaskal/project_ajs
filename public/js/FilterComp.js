@@ -1,5 +1,5 @@
 Vue.component('filter-el', {
-    data(){
+    data() {
         return {
             userSearch: ''
         }
