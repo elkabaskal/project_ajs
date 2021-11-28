@@ -2,11 +2,18 @@ const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-a
 
 const app = new Vue({
     el: '#app',
+
     data: {
-        userSearch: '',
+        title: 'Project internet shop AJS',
+        currentTab: 'products',
     },
+
     methods: {
-        getJson(url){
+        loadNewPage(tab) {
+            this.currentTab = tab;
+        },
+
+        getJson(url) {
             return fetch(url)
                 .then(result => result.json())
                 .catch(error => {
@@ -15,43 +22,44 @@ const app = new Vue({
         },
         postJson(url, data) {
             return fetch(url, {
-                method: 'POST',
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            }).then(result => result.json())
-              .catch(error => {
-                  this.$refs.error.setError(error);
-              });
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }).then(result => result.json())
+                .catch(error => {
+                    this.$refs.error.setError(error);
+                });
         },
         putJson(url, data) {
             return fetch(url, {
-                method: 'PUT',
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            }).then(result => result.json())
-              .catch(error => {
-                  this.$refs.error.setError(error);
-              });
+                    method: 'PUT',
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }).then(result => result.json())
+                .catch(error => {
+                    this.$refs.error.setError(error);
+                });
         },
-        deleteJson(url, data) {
+        deleteJson(url) {
             return fetch(url, {
-                method: 'DELETE',
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            }).then(result => result.json())
-              .catch(error => {
-                  this.$refs.error.setError(error);
-              });
+                    method: 'DELETE',
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                }).then(result => result.json())
+                .catch(error => {
+                    this.$refs.error.setError(error);
+                });
         },
     },
-    mounted() {
-        console.log(this);
-    }
-});
+    computed: {
+        currentComponent(tab) {
+            return this.tab = `${this.currentTab}`;
+        }
+    },
 
+});
